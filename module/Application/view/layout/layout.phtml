@@ -11,7 +11,7 @@
         ?>
 
         <!-- Le styles -->
-        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+        <?php echo $this->headLink()
                         ->prependStylesheet($this->basePath() . '/css/style.css')
                         ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
                         ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css')
@@ -31,15 +31,28 @@
 
     </head>
     <body>
+    <div id="wrapper">
         <div id="carousel">
-            <img src="img/hd/1.jpg"/>
-            <img src="img/hd/2.jpg"/>
-            <img src="img/hd/3.jpg"/>
-            <img src="img/hd/4.jpg"/>
-            <img src="img/hd/5.jpg"/>
-            <img src="img//hd/6.jpg"/>
+            <img src="img/carousel/1.jpg"/>
+            <img src="img/carousel/2.jpg"/>
+            <img src="img/carousel/3.jpg"/>
+            <img src="img/carousel/4.jpg"/>
+            <img src="img/carousel/5.jpg"/>
+            <img src="img/carousel/6.jpg"/>
+            <img src="img/carousel/7.jpg"/>
+            <img src="img/carousel/8.jpg"/>
+            <img src="img/carousel/9.jpg"/>
         </div>
-        <div id="content" class="content">
+    </div>
+    <div id="navbar" class="container">
+        <ul class="nav nav-tabs">
+            <li><a href="<?php echo $this->url('home'); ?>">Home</a></li>
+            <li><a href="<?php echo $this->url('profile'); ?>">Profile</a></li>
+            <li><a href="<?php echo $this->url('projects'); ?>">Projects</a></li>
+            <li><a href="<?php echo $this->url('contact'); ?>">Contact</a></li>
+        </ul>
+    </div>
+        <div id="content" class="container">
             <?php echo $this->content; ?>
         </div> <!-- /container -->
         <?php echo $this->inlineScript() ?>

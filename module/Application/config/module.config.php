@@ -20,33 +20,43 @@ return array(
                     ),
                 ),
             ),
-            // The following is a route to simplify getting started creating
-            // new controllers and actions without needing to create a new
-            // module. Simply drop new controllers in, and you can access them
-            // using the path /application/:controller/:action
+            'profile' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route'    => '/profile',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'profile',
+                    ),
+                ),
+            ),
+            'contact' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route'    => '/contact',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'contact',
+                    ),
+                ),
+            ),
             'application' => array(
-                'type'    => 'Literal',
+                'type' => 'Literal',
                 'options' => array(
                     'route'    => '/application',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'Application\Controller',
-                        'controller'    => 'Index',
-                        'action'        => 'index',
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'application',
                     ),
                 ),
-                'may_terminate' => true,
-                'child_routes' => array(
-                    'default' => array(
-                        'type'    => 'Segment',
-                        'options' => array(
-                            'route'    => '/[:controller[/:action]]',
-                            'constraints' => array(
-                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                                'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
-                            ),
-                            'defaults' => array(
-                            ),
-                        ),
+            ),
+            'projects' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route'    => '/projects',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'projects',
                     ),
                 ),
             ),

@@ -18,4 +18,25 @@ class IndexController extends AbstractActionController
     {
         return new ViewModel();
     }
+    public function profileAction()
+    {
+        return new ViewModel();
+    }
+    public function contactAction()
+    {
+        return new ViewModel();
+    }
+
+    public function projectsAction()
+    {
+        return new ViewModel();
+    }
+
+    public function applicationAction()
+    {
+        $result = new ViewModel();
+        //$result->setTerminal(true);
+
+        return $result;
+    }
 }

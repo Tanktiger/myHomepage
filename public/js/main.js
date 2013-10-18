@@ -4,20 +4,24 @@ $(function() {
     var $window = $(window);
 
     $window.resize(function() {
-        $wrapper.height( $window.height() * 0.3 );
-        $carousel.height( $window.height() * 0.3 );
+        var height = $window.height() * 0.3;
+        if (height < 200) {
+            height = 200;
+        }
+        $wrapper.height( height );
+        $carousel.height( height );
     }).resize();
 
     $carousel.carouFredSel({
         width: '100%',
-        height: '10%',
         scroll: {
             items: 1,
-            duration: 1000
+            duration: 1000,
+            pauseOnHover: true
         },
         items: {
-            visible: 'odd',
-            start: -1,
+            visible: 1,
+            start: 0,
             width: 'variable',
             height: 'variable'
         },
@@ -26,4 +30,13 @@ $(function() {
             onMouse: true
         }
     });
+    $('.application .thumbnail').on('click', function(){
+        console.log($(this).find('img'));
+        var img = $(this).find('img').attr('src');
+
+    });
+    $('#myModal').on('show.bs.modal', function (data) {
+       $(this).find('.modal-body img').attr('src', data.relatedTarget.firstChild.attributes[0].nodeValue);
+        $(this).find('.modal-body img').css('width', '100%');
+    })
 });
