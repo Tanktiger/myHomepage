@@ -4,12 +4,6 @@ body {
     min-height: 300px;
     overflow-y: scroll;
 }
-body * {
-    font-family: Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 14px;
-    color: #333;
-    line-height: 22px;
-}
 
 /**********************************/
 /******** Head-Carousel **********/
@@ -28,13 +22,26 @@ body * {
     width: auto;
     display: block;
     float: left;
+    border: 3px Solid #eec;
 }
+.marginRight50 {margin-right:50px;}
 /*****************************/
-/****** Bewerbung **************/
-/****************************/
+/****** Bewerbung ************/
+/*****************************/
 
 .cv table td:first-child {font-weight:bold;width:40%}
 .cv table th:first-child {font-weight:bold;font-size:18px}
 .application .applicationText {display:inline-block}
 .application .jumbotron .picture {display:inline-block}
 .application .model-body img {width: 100%;}
+
+/*****************************/
+/****** Index ****************/
+/*****************************/
+.mainNavigation{width: 15%;}
+
+@media (max-width: 979px){
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        position: fixed;
+    }
+}

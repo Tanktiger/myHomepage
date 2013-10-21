@@ -21,7 +21,7 @@
         <!-- Scripts -->
         <?php echo $this->headScript()
             ->prependFile($this->basePath() . '/js/main.js')
-            ->prependFile($this->basePath() . '/js/jquery.carouFredSel-6.0.4-packed.js')
+            ->prependFile($this->basePath() . '/js/jquery.carouFredSel-6.2.1-packed.js')
             ->prependFile($this->basePath() . '/js/jquery.touchSwipe.min.js')
             ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
             ->prependFile($this->basePath() . '/js/html5shiv.js',   'text/javascript', array('conditional' => 'lt IE 9',))
@@ -30,31 +30,33 @@
         ; ?>
 
     </head>
-    <body>
+    <body data-spy="scroll">
     <div id="wrapper">
         <div id="carousel">
-            <img src="img/carousel/1.jpg"/>
-            <img src="img/carousel/2.jpg"/>
-            <img src="img/carousel/3.jpg"/>
-            <img src="img/carousel/4.jpg"/>
-            <img src="img/carousel/5.jpg"/>
-            <img src="img/carousel/6.jpg"/>
-            <img src="img/carousel/7.jpg"/>
-            <img src="img/carousel/8.jpg"/>
-            <img src="img/carousel/9.jpg"/>
+            <img src="img/carousel/1.jpg" width="400" height="400" />
+            <img src="img/carousel/2.jpg" width="400" height="400" />
+            <img src="img/carousel/3.jpg" width="400" height="400" />
+            <img src="img/carousel/4.jpg" width="400" height="400" />
+            <img src="img/carousel/5.jpg" width="400" height="400" />
+            <img src="img/carousel/6.jpg" width="400" height="400" />
+            <img src="img/carousel/7.jpg" width="400" height="400" />
+            <img src="img/carousel/8.jpg" width="400" height="400" />
+            <img src="img/carousel/9.jpg" width="400" height="400" />
         </div>
     </div>
     <div id="navbar" class="container">
-        <ul class="nav nav-tabs">
-            <li><a href="<?php echo $this->url('home'); ?>">Home</a></li>
-            <li><a href="<?php echo $this->url('profile'); ?>">Profile</a></li>
-            <li><a href="<?php echo $this->url('projects'); ?>">Projects</a></li>
-            <li><a href="<?php echo $this->url('contact'); ?>">Contact</a></li>
-        </ul>
+        <div class="navbar-inner">
+            <ul class="nav nav-tabs navbar-fixed-bottom nav-stacked mainNavigation">
+                <li><a href="#wrapper">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </div>
         <div id="content" class="container">
             <?php echo $this->content; ?>
-        </div> <!-- /container -->
+        </div>
         <?php echo $this->inlineScript() ?>
     </body>
 </html>

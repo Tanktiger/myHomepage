@@ -2,6 +2,7 @@ $(function() {
     var $carousel = $('#carousel');
     var $wrapper = $('#wrapper');
     var $window = $(window);
+    var carouselImgCount = 1;
 
     $window.resize(function() {
         var height = $window.height() * 0.3;
@@ -10,33 +11,58 @@ $(function() {
         }
         $wrapper.height( height );
         $carousel.height( height );
+        setCarouselImgCount ();
     }).resize();
 
-    $carousel.carouFredSel({
-        width: '100%',
-        scroll: {
-            items: 1,
-            duration: 1000,
-            pauseOnHover: true
-        },
-        items: {
-            visible: 1,
-            start: 0,
-            width: 'variable',
-            height: 'variable'
-        },
-        swipe: {
-            onTouch: true,
-            onMouse: true
+    generateCarousel();
+    function generateCarousel() {
+        $carousel.carouFredSel({
+            width: '100%',
+            scroll: {
+                items: 1,
+                duration: 800,
+                pauseOnHover: true
+            },
+            items: {
+                visible: carouselImgCount,
+                start: 1,
+                width: 'variable',
+                height: 'variable'
+            },
+            swipe: {
+                onTouch: true,
+                onMouse: true
+            }
+        });
+    }
+    function setCarouselImgCount () {
+        var windowWidth = $window.width();
+        if (windowWidth > 720) {
+            carouselImgCount = 3;
+
+            $('#navbar').show();
+
+            $.each($('#carousel img'), function(key, item){
+               $(item).addClass('marginRight50');
+            });
+        } else {
+            carouselImgCount = 1;
+            //Show better on mobile
+            $('#navbar').hide();
+            $.each($('#carousel img'), function(key, item){
+                $(item).removeClass('marginRight50');
+            })
         }
-    });
+    }
     $('.application .thumbnail').on('click', function(){
-        console.log($(this).find('img'));
         var img = $(this).find('img').attr('src');
 
     });
     $('#myModal').on('show.bs.modal', function (data) {
        $(this).find('.modal-body img').attr('src', data.relatedTarget.firstChild.attributes[0].nodeValue);
-        $(this).find('.modal-body img').css('width', '100%');
+       $(this).find('.modal-body img').css('width', '100%');
     })
+});
+$('.nav-collapse .nav > li > a').click(function(){
+    $('.collapse.in').removeClass('in').css('height', '0');
 });

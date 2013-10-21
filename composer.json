@@ -1,12 +1,12 @@
 {
-    "name": "zendframework/skeleton-application",
-    "description": "Skeleton Application for ZF2",
+    "name": "tanktiger/myHomepage",
+    "description": "my own Homepage",
     "license": "BSD-3-Clause",
     "keywords": [
-        "framework",
-        "zf2"
+        "tom",
+        "scheduikat"
     ],
-    "homepage": "http://framework.zend.com/",
+    "homepage": "http://www.tomscheduikat.de/",
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.2.*"

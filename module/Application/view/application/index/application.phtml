@@ -1,3 +1,4 @@
+<?php namespace Application; ?>
 <div class="application">
     <div class="jumbotron">
         <div class="applicationText">
@@ -6,11 +7,10 @@
                 Probleme kreative sowie fachlich hervorragende Lösungen findet und jemanden, der zielstrebig der
                 Firmenphilosophie nacheifert, dann sind sie jetzt fündig geworden!</p>
             <p>Zum gegenwärtigen Zeitpunkt arbeite ich als Junior Softwareentwickler bei der Unister GmbH in Stralsund.
-                (Aus persönlichen Gründen jedoch, werde ich jedoch das Unternehmen verlassen müssen) Gerne möchte ich
-                meine bereits vorhandenen Kenntnisse und Fähigkeiten, welche ich ebenfalls in meiner Ausbildung zum
+                Gerne möchte ich meine bereits vorhandenen Kenntnisse und Fähigkeiten, welche ich ebenfalls in meiner Ausbildung zum
                 Fachinformatiker erworben habe, vertiefen und ausbauen. Ich bin mir sicher, dass ich Ihr Team mit
                 meinen Stärken erfolgreich unterstützen kann.</p>
-            <p>Für meine Zukunft in diesem Beruf erhoffe ich mir in Ihrem Haus einen heraus-fordernden, kreativen und
+            <p>Für meine Zukunft in diesem Beruf erhoffe ich mir in Ihrem Haus einen herausfordernden, kreativen und
                 abwechslungsreichen Arbeitsplatz. Gerne würde ich Sie in einem persönlichen Gespräch davon überzeugen,
                 dass eine Tätigkeit in Ihrem Hause genau meinen Vorstellungen entspricht
                 und dies der Sinn meiner beruflichen Zukunft darstellt.</p>
@@ -26,23 +26,23 @@
         <div class="table-responsive">
             <table class="table">
                 <thead>
-                    <th>Persönliche Daten:</th>
+                    <th><?php echo $this->translate("Persoenliche Daten",  __NAMESPACE__)?>:</th>
                     <th>&nbsp;</th>
                 </thead>
                 <tr>
-                    <td>Name:</td>
+                    <td><?php echo $this->translate("Name",  __NAMESPACE__);?>:</td>
                     <td>Scheduikat</td>
                 </tr>
                 <tr>
-                    <td>Vorname:</td>
+                    <td><?php echo $this->translate("Vorname",  __NAMESPACE__);?>:</td>
                     <td>Tom</td>
                 </tr>
                 <tr>
-                    <td>Adresse:</td>
+                    <td><?php echo $this->translate("Adresse",  __NAMESPACE__);?>:</td>
                     <td>Frankenstraße 29, 18439 Stralsund</td>
                 </tr>
                 <tr>
-                    <td>Telefon:</td>
+                    <td><?php echo $this->translate("Telefon",  __NAMESPACE__);?>:</td>
                     <td>0152 548 626 84</td>
                 </tr>
                 <tr>
@@ -50,11 +50,11 @@
                     <td>Tom.Scheduikat@googlemail.com</td>
                 </tr>
                 <tr>
-                    <td>Geburtsdatum:</td>
+                    <td><?php echo $this->translate("Geburtsdatum",  __NAMESPACE__);?>:</td>
                     <td>8. März 1991</td>
                 </tr>
                 <tr>
-                    <td>Zivilstand:</td>
+                    <td><?php echo $this->translate("Zivilstand",  __NAMESPACE__);?>:</td>
                     <td>ledig</td>
                 </tr>
             </table>
