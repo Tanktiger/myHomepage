@@ -16,7 +16,9 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        $now = date('Y/M/D');
+        $age = $now - date('1991/03/08');
+        return new ViewModel(array('age' => $age));
     }
     public function profileAction()
     {
@@ -34,9 +36,6 @@ class IndexController extends AbstractActionController
 
     public function applicationAction()
     {
-        $result = new ViewModel();
-        //$result->setTerminal(true);
-
-        return $result;
+        return new ViewModel();
     }
 }

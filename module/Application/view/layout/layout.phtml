@@ -32,31 +32,24 @@
     </head>
     <body data-spy="scroll">
     <div id="wrapper">
-        <div id="carousel">
-            <img src="img/carousel/1.jpg" width="400" height="400" />
-            <img src="img/carousel/2.jpg" width="400" height="400" />
-            <img src="img/carousel/3.jpg" width="400" height="400" />
-            <img src="img/carousel/4.jpg" width="400" height="400" />
-            <img src="img/carousel/5.jpg" width="400" height="400" />
-            <img src="img/carousel/6.jpg" width="400" height="400" />
-            <img src="img/carousel/7.jpg" width="400" height="400" />
-            <img src="img/carousel/8.jpg" width="400" height="400" />
-            <img src="img/carousel/9.jpg" width="400" height="400" />
+        <div class="pictures">
+            <div id="carousel">
+                <img src="img/carousel/1.jpg" width="200" height="200" />
+                <img src="img/carousel/2.jpg" width="200" height="200" />
+                <img src="img/carousel/3.jpg" width="200" height="200" />
+                <img src="img/carousel/4.jpg" width="200" height="200" />
+                <img src="img/carousel/5.jpg" width="200" height="200" />
+                <img src="img/carousel/6.jpg" width="200" height="200" />
+                <img src="img/carousel/7.jpg" width="200" height="200" />
+                <img src="img/carousel/8.jpg" width="200" height="200" />
+                <img src="img/carousel/9.jpg" width="200" height="200" />
+            </div>
+            <div class="clearfix"></div>
         </div>
     </div>
-    <div id="navbar" class="container">
-        <div class="navbar-inner">
-            <ul class="nav nav-tabs navbar-fixed-bottom nav-stacked mainNavigation">
-                <li><a href="#wrapper">Home</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <div id="content" class="container">
+        <?php echo $this->content; ?>
     </div>
-        <div id="content" class="container">
-            <?php echo $this->content; ?>
-        </div>
-        <?php echo $this->inlineScript() ?>
+    <?php echo $this->inlineScript() ?>
     </body>
 </html>

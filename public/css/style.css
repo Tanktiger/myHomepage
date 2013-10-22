@@ -3,6 +3,7 @@ body {
     position: relative;
     min-height: 300px;
     overflow-y: scroll;
+    overflow-x:hidden;
 }
 
 /**********************************/
@@ -38,10 +39,4 @@ body {
 /*****************************/
 /****** Index ****************/
 /*****************************/
-.mainNavigation{width: 15%;}
-
-@media (max-width: 979px){
-    .navbar-fixed-top, .navbar-fixed-bottom {
-        position: fixed;
-    }
-}
+.navigation {width: 30%;height: auto;}
