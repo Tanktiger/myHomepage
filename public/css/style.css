@@ -21,6 +21,8 @@ body {
 #carousel img {
     height: 100%;
     width: auto;
+    max-width: 320px;
+    max-height: 300px;
     display: block;
     float: left;
     border: 3px Solid #eec;
@@ -40,3 +42,4 @@ body {
 /****** Index ****************/
 /*****************************/
 .navigation {width: 30%;height: auto;}
+.page-header {border-bottom: 1px solid #DDD;}

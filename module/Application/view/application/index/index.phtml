@@ -3,10 +3,10 @@
         <div id="navbar" data-spy="affix" data-offset-top="0">
             <div class="navbar-inner">
                 <ul class="nav nav-tabs nav-stacked mainNavigation">
-                    <li><a href="#wrapper">Home</a></li>
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#wrapper"><?php echo $this->translate('[NAVIGATION_HOME]');?></a></li>
+                    <li><a href="#profile"><?php echo $this->translate('[NAVIGATION_PROFILE]');?></a></li>
+                    <li><a href="#projects"><?php echo $this->translate('[NAVIGATION_PROJECTS]');?></a></li>
+                    <li><a href="#contact"><?php echo $this->translate('[NAVIGATION_CONTACT]');?></a></li>
                 </ul>
             </div>
         </div>
@@ -15,35 +15,32 @@
     <div data-target=".mainNavigation" class="col-md-8">
         <div>
             <div class="page-header" id="start">
-                <h1>Zur Person <small> That's me</small></h1>
+                <h1><?php echo $this->translate('[PERSON_HEADLINE]');?><small><?php echo $this->translate('[PERSON_HEADLINE_SMALL]');?></small></h1>
             </div>
             <div class="well well-lg">
-                <p class="lead">Hallo,</p>
-                <p class="lead">Ich heiße Tom Scheduikat und bin <?php echo $this->age ; ?> Jahre alt.
-                Ich lebe zurzeit in Stralsund, einer schönen Stadt im Norden Deutschlands.</p>
-                <p class="lead">Zurzeit arbeite ich Hauptberuflich als Softwareentwickler für einen großen deutschen Internetkonzern.
-                Hauptsächlich verbringe ich meine Freizeit mit der Familie und kümmere mich um die anderen Sachen
-                wenn der Rest schläft. Dann programmiere ich an ein paar von
-                meinen eigenen <a href="#projects">Projekten</a> und wenn ich darauf mal keine Lust habe
-                dann spiele ich auch ein paar Spiele :D</p>
+                <p class="lead"><?php echo $this->translate('[HELLO]');?>,</p>
 
+                <p class="lead"><?php echo $this->translate('[PERSON_TEXT_FIRST]');?> <?php echo $this->age ; ?> <?php echo $this->translate('[PERSON_TEXT_2]');?>.
+                    <?php echo $this->translate('[PERSON_TEXT_3]');?>
             </div>
         </div>
         <div>
             <div class="page-header" id="profile">
-                <h1>Ein Paar Fakten über mich <small> Yeah</small></h1>
+                <h1><?php echo $this->translate('[FACTS_HEADLINE]');?></h1>
             </div>
             <div class="panel panel-warning">
                 <div class="panel-heading">
-                    <h2 class="panel-title">Allgemein</h2>
+                    <h2 class="panel-title"><?php echo $this->translate('[FACTS_PANEL_HEAD_1]');?></h2>
                 </div>
                 <div class="panel-body">
-                    <div class="well well-sm"><a href="https://www.xing.com/profiles/Tom_Scheduikat">Xing</a></div>
+                    <div class="well well-sm">
+                        <a href="https://www.xing.com/profiles/Tom_Scheduikat" target="_blank">Xing</a>
+                    </div>
                 </div>
             </div>
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h2 class="panel-title">Qualifikationen</h2>
+                    <h2 class="panel-title"><?php echo $this->translate('[FACTS_PANEL_HEAD_2]');?></h2>
                 </div>
                 <div class="panel-body">
                     <div class="well well-sm">PHP</div>
@@ -59,56 +56,63 @@
             </div>
             <div class="panel panel-success">
                 <div class="panel-heading">
-                    <h2 class="panel-title">Menschliches</h2>
+                    <h2 class="panel-title"><?php echo $this->translate('[FACTS_PANEL_HEAD_3]');?></h2>
                 </div>
                 <div class="panel-body">
-                    <div class="well well-sm">Teamfähig</div>
-                    <div class="well well-sm">Kreativ</div>
-                    <div class="well well-sm">Zielorientiert</div>
-                    <div class="well well-sm">Orgnisator</div>
+                    <div class="well well-sm"><?php echo $this->translate('[FACTS_PANEL_HUMAN_ATTR_1]');?></div>
+                    <div class="well well-sm"><?php echo $this->translate('[FACTS_PANEL_HUMAN_ATTR_2]');?></div>
+                    <div class="well well-sm"><?php echo $this->translate('[FACTS_PANEL_HUMAN_ATTR_3]');?></div>
+                    <div class="well well-sm"><?php echo $this->translate('[FACTS_PANEL_HUMAN_ATTR_4]');?></div>
                 </div>
             </div>
         </div>
         <div>
             <div class="page-header" id="projects">
-                <h1>My Projects </h1>
+                <h1><?php echo $this->translate('[PROJECTS_HEADLINE]');?></h1>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Diese Homepage</h3>
+                    <h3 class="panel-title"><?php echo $this->translate('[PROJECTS_1_HEAD]');?></h3>
                 </div>
                 <div class="panel-body">
-                    Diese Homepage soll Infos zu meiner Person geben und für eventuell anstehende Bewerbungsgespräche dienen.
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">YuGiOh mDB</h3>
-                </div>
-                <div class="panel-body">
-                    Dies ist meine erste Web App für das Smartphone. Mit Jquery Mobile und PhoneGap realisiert.<br>
-                    Diese App sucht anhand von Namen oder Kartennummer, YuGiOh Karten aus einer DB zeigt diese an.
+                    <?php echo $this->translate('[PROJECTS_1_TEXT]');?>
                 </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Cardgame</h3>
+                    <h3 class="panel-title"><?php echo $this->translate('[PROJECTS_2_HEAD]');?></h3>
                 </div>
                 <div class="panel-body">
-                    Dies ist noch eine Geheime Idee von mir bezüglich eines Kartenspiels für Desktop und Mobile Bereich.
+                    <?php echo $this->translate('[PROJECTS_2_TEXT]');?>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><?php echo $this->translate('[PROJECTS_3_HEAD]');?></h3>
+                </div>
+                <div class="panel-body">
+                    <?php echo $this->translate('[PROJECTS_3_TEXT]');?>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><?php echo $this->translate('[PROJECTS_4_HEAD]');?></h3>
+                </div>
+                <div class="panel-body">
+                    <?php echo $this->translate('[PROJECTS_4_TEXT]');?>
                 </div>
             </div>
         </div>
         <div>
             <div class="page-header" id="contact">
-                <h1>Contact <small> Please contact me when you have some Questions</small></h1>
+                <h1><?php echo $this->translate('[CONTACT_HEADLINE]');?></h1>
             </div>
             <div class="well well-lg">
-                <p class="lead">Bitte kontaktiert mich wenn ihr Fragen habt.</p>
+                <p class="lead"><?php echo $this->translate('[CONTACT_TEXT_1]');?></p>
                 <address>
                     <a href="mailto:#">Tom.Scheduikat@googlemail.com</a>
                 </address>
-                <p class="lead">Oder schreibt mir einfach bei Xing.</p>
+                <p class="lead"><?php echo $this->translate('[CONTACT_TEXT_2]');?></p>
             </div>
         </div>
     </div>
