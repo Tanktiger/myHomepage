@@ -117,5 +117,5 @@ return array(
                         Organizer<br>
                         Stress tough
                     </td>',
-
+    '[APPLICATION_BASICS]' => 'Basics',
 );

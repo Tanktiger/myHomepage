@@ -118,5 +118,5 @@ return array(
                         Organisationstalent<br>
                         Stressrobust
                     </td>',
-
+    '[APPLICATION_BASICS]' => 'Grundkenntnisse',
 );
