@@ -35,7 +35,7 @@ $(function() {
             }
         });
         //Hack um die Startbilder in die Mitte zu holen
-        $carousel.css('left', '270px');
+        $carousel.css('left', ($(window).width()/5) + 'px');
     }
     function setCarouselImgCount () {
         var windowWidth = $window.width();
