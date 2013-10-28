@@ -20,26 +20,6 @@ return array(
                     ),
                 ),
             ),
-            'profile' => array(
-                'type' => 'Literal',
-                'options' => array(
-                    'route'    => '/profile',
-                    'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
-                        'action'     => 'profile',
-                    ),
-                ),
-            ),
-            'contact' => array(
-                'type' => 'Literal',
-                'options' => array(
-                    'route'    => '/contact',
-                    'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
-                        'action'     => 'contact',
-                    ),
-                ),
-            ),
             'application' => array(
                 'type' => 'Literal',
                 'options' => array(
@@ -47,16 +27,6 @@ return array(
                     'defaults' => array(
                         'controller' => 'Application\Controller\Index',
                         'action'     => 'application',
-                    ),
-                ),
-            ),
-            'projects' => array(
-                'type' => 'Literal',
-                'options' => array(
-                    'route'    => '/projects',
-                    'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
-                        'action'     => 'projects',
                     ),
                 ),
             ),

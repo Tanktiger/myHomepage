@@ -11,6 +11,7 @@ body {
 /********************************/
 .caroufredsel_wrapper {
     background-color: #333;
+    background: url("/../img/carousel/back.jpg") 62% 60% transparent;
     left: 0 !important;
 }
 #carousel {

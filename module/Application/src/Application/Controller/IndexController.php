@@ -20,19 +20,6 @@ class IndexController extends AbstractActionController
         $age = $now - date('1991/03/08');
         return new ViewModel(array('age' => $age));
     }
-    public function profileAction()
-    {
-        return new ViewModel();
-    }
-    public function contactAction()
-    {
-        return new ViewModel();
-    }
-
-    public function projectsAction()
-    {
-        return new ViewModel();
-    }
 
     public function applicationAction()
     {
