@@ -119,4 +119,12 @@ return array(
                         Stressrobust
                     </td>',
     '[APPLICATION_BASICS]' => 'Grundkenntnisse',
+
+    '[APPLICATION_THUMBTITLE_IMAGE]' => 'Foto',
+    '[APPLICATION_THUMBTITLE_IHK]' => 'IHK Zeugnis',
+    '[APPLICATION_THUMBTITLE_FHSR]' => 'Fachhochschulreife Zeugnis',
+    '[APPLICATION_THUMBTITLE_TRAINEESHIP]' => 'Praktikumszeugnis',
+    '[APPLICATION_THUMBTITLE_UNISTER1]' => 'Unister Arbeitszeugnis Teil 1',
+    '[APPLICATION_THUMBTITLE_UNISTER2]' => 'Unister Arbeitszeugnis Teil 2',
+
 );

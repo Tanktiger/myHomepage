@@ -11,7 +11,7 @@ body {
 /********************************/
 
 .caroufredsel_wrapper {
-    background: url("/../img/carousel/back.jpg") 62% 60% transparent;
+    background: url("../../public/img/carousel/back.jpg") 62% 60% transparent;
     left: 0 !important;
 }
 @media screen and (max-width: 600px) {

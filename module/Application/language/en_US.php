@@ -118,4 +118,11 @@ return array(
                         Stress tough
                     </td>',
     '[APPLICATION_BASICS]' => 'Basics',
+
+    '[APPLICATION_THUMBTITLE_IMAGE]' => 'Portrait',
+    '[APPLICATION_THUMBTITLE_IHK]' => 'IHK Certificate',
+    '[APPLICATION_THUMBTITLE_FHSR]' => 'university of applied sciences entrance qualification',
+    '[APPLICATION_THUMBTITLE_TRAINEESHIP]' => 'letter of recommendation',
+    '[APPLICATION_THUMBTITLE_UNISTER1]' => "Unister employer's reference part 1",
+    '[APPLICATION_THUMBTITLE_UNISTER2]' => "Unister employer's reference part 2",
 );

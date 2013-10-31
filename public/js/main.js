@@ -55,14 +55,13 @@ $(function() {
         }
         $('#navbar').width($('.navigation').width());
     }
-    $('.application .thumbnail').on('click', function(){
-        var img = $(this).find('img').attr('src');
 
-    });
     $('#myModal').on('show.bs.modal', function (data) {
-       $(this).find('.modal-body img').attr('src', data.relatedTarget.firstChild.attributes[0].nodeValue);
+       $(this).find('.modal-body img').attr('src', $(data.relatedTarget).find('img').attr('src'));
+       $(this).find('.modal-header .modal-title').text($(data.relatedTarget).find('img').attr('title'));
        $(this).find('.modal-body img').css('width', '100%');
     });
+//    $('.thumbnail img').tooltip();
     //Affix fixes
     $('.navigation').height($('#navbar').height());
     $('#navbar').width($('.navigation').width());
