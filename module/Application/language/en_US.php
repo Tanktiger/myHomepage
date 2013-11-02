@@ -34,6 +34,8 @@ return array(
     '[PROJECTS_3_TEXT]' => 'This is secret game idea from me :)',
     '[PROJECTS_4_HEAD]' => 'Ideasite',
     '[PROJECTS_4_TEXT]' => 'A site to share ideas.',
+    '[PROJECTS_5_HEAD]' => 'Shutdown-Timer',
+    '[PROJECTS_5_TEXT]' => '<p>A Timer for shutting down Windows after a specific time, written in Java.</p>',
 
     '[CONTACT_HEADLINE]' => 'Contact',
     '[CONTACT_TEXT_1]' => 'Please feel free to contact me, if you have questions.',

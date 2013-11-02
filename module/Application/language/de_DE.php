@@ -37,6 +37,8 @@ return array(
     '[PROJECTS_3_TEXT]' => ' Dies ist noch eine Geheime Idee von mir bezüglich eines Kartenspiels für Desktop und Mobile Bereich.',
     '[PROJECTS_4_HEAD]' => 'Ideasite',
     '[PROJECTS_4_TEXT]' => 'Eine Seite zum Austausch von Ideen wie Kickstartet.',
+    '[PROJECTS_5_HEAD]' => 'Shutdown-Timer',
+    '[PROJECTS_5_TEXT]' => '<p>Ein Timer, geschrieben in Java, der den Windows Rechner nach den eingegebenen Minuten herunterfahren lässt.</p>',
 
     '[CONTACT_HEADLINE]' => 'Kontakt',
     '[CONTACT_TEXT_1]' => 'Bitte kontaktiert mich wenn ihr Fragen habt.',
