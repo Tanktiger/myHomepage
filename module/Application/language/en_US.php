@@ -127,4 +127,6 @@ return array(
     '[APPLICATION_THUMBTITLE_TRAINEESHIP]' => 'letter of recommendation',
     '[APPLICATION_THUMBTITLE_UNISTER1]' => "Unister employer's reference part 1",
     '[APPLICATION_THUMBTITLE_UNISTER2]' => "Unister employer's reference part 2",
+
+    '[APPLICATION_OTHER_LANGUAGES]' => 'Other Languages',
 );

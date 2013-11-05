@@ -52,8 +52,8 @@ return array(
             <p>Zum gegenwärtigen Zeitpunkt arbeite ich als Junior Softwareentwickler bei der Unister GmbH in Stralsund.
                 Gerne möchte ich meine bereits vorhandenen Kenntnisse und Fähigkeiten, welche ich ebenfalls in meiner Ausbildung zum
                 Fachinformatiker erworben habe, vertiefen und ausbauen. Ich bin mir sicher, dass ich Ihr Team mit
-                meinen Stärken erfolgreich unterstützen kann.</p>
-            <p>Für meine Zukunft in diesem Beruf erhoffe ich mir in Ihrem Haus einen herausfordernden, kreativen und
+                meinen Stärken erfolgreich unterstützen werde.</p>
+            <p>Für meine Zukunft in diesem Beruf erhoffe ich mir in einem Unternehmen einen herausfordernden, kreativen und
                 abwechslungsreichen Arbeitsplatz. Gerne würde ich Sie in einem persönlichen Gespräch davon überzeugen,
                 dass eine Tätigkeit in Ihrem Hause genau meinen Vorstellungen entspricht
                 und dies der Sinn meiner beruflichen Zukunft darstellt.</p>',
@@ -128,5 +128,7 @@ return array(
     '[APPLICATION_THUMBTITLE_TRAINEESHIP]' => 'Praktikumszeugnis',
     '[APPLICATION_THUMBTITLE_UNISTER1]' => 'Unister Arbeitszeugnis Teil 1',
     '[APPLICATION_THUMBTITLE_UNISTER2]' => 'Unister Arbeitszeugnis Teil 2',
+
+    '[APPLICATION_OTHER_LANGUAGES]' => 'Andere Sprachen',
 
 );
