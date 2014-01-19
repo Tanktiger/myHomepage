@@ -16,13 +16,14 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        $now = date('Y/M/D');
-        $age = $now - date('1991/03/08');
-        return new ViewModel(array('age' => $age));
+//        $now = date('Y/M/D');
+//        $age = $now - date('1991/03/08');
+//        return new ViewModel(array('age' => $age));
+        return new ViewModel(array('age' => 22));
     }
 
     public function applicationAction()
     {
-        return new ViewModel();
+        $this->redirect()->toRoute('home');
     }
 }

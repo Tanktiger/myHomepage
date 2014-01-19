@@ -21,7 +21,7 @@ return array(
                 ),
             ),
             'application' => array(
-                'type' => 'Literal',
+                'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
                     'route'    => '/application',
                     'defaults' => array(
