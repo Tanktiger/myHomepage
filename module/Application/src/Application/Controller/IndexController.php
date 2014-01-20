@@ -21,9 +21,4 @@ class IndexController extends AbstractActionController
 //        return new ViewModel(array('age' => $age));
         return new ViewModel(array('age' => 22));
     }
-
-    public function applicationAction()
-    {
-        $this->redirect()->toRoute('home');
-    }
 }
