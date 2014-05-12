@@ -9,8 +9,8 @@ return array(
     '[PERSON_HEADLINE_SMALL]' => 'Das bin ich',
     '[PERSON_TEXT_FIRST]' => 'Ich heiße Tom Scheduikat und bin',
     '[PERSON_TEXT_2]' => 'Jahre alt',
-    '[PERSON_TEXT_3]' => 'Ich lebe zurzeit in Stralsund, einer schönen Stadt im Norden Deutschlands.</p>
-                    <p class="lead">Zurzeit arbeite ich Hauptberuflich als Softwareentwickler für einen großen deutschen Internetkonzern.
+    '[PERSON_TEXT_3]' => 'Ich lebe zurzeit in Stralsund, einer der schönsten Städte im Norden Deutschlands.</p>
+                    <p class="lead">Zurzeit arbeite ich Hauptberuflich als Softwareentwickler für einen deutschen Internetkonzern.
                     Hauptsächlich verbringe ich meine Freizeit mit der Familie und kümmere mich um die anderen Sachen
                     wenn der Rest schläft. Dann programmiere ich an ein paar von
                     meinen eigenen <a href="#projects">Projekten</a> und wenn ich darauf mal keine Lust habe
@@ -30,13 +30,8 @@ return array(
     '[PROJECTS_HEADLINE]' => 'Meine Projekte',
     '[PROJECTS_1_HEAD]' => 'Diese Homepage',
     '[PROJECTS_1_TEXT]' => 'Diese Homepage soll Infos zu meiner Person geben und für eventuell anstehende Bewerbungsgespräche dienen.',
-    '[PROJECTS_2_HEAD]' => 'YuGiOh mDB',
-    '[PROJECTS_2_TEXT]' => 'Dies ist meine erste Web App für das Smartphone. Mit jQuery Mobile und PhoneGap realisiert.<br>
-                            Diese App sucht anhand von Namen oder Kartennummer, YuGiOh Karten aus einer DB und zeigt diese an.',
-    '[PROJECTS_3_HEAD]' => 'Cardgame',
-    '[PROJECTS_3_TEXT]' => ' Dies ist noch eine Geheime Idee von mir bezüglich eines Kartenspiels für Desktop und Mobile Bereich.',
-    '[PROJECTS_4_HEAD]' => 'Ideasite',
-    '[PROJECTS_4_TEXT]' => 'Eine Seite zum Austausch von Ideen wie Kickstartet.',
+    '[PROJECTS_2_HEAD]' => 'FeWo [in development]',
+    '[PROJECTS_2_TEXT]' => 'Dies ist eine Idee von mir, bei der sich FeWo oder Hotelbetreiber eine Seite automatisch erstellen lassen können.<a href="http://www.fewo-traumzeit.de" target="_blank">www.fewo-traumzeit.de</a>',
     '[PROJECTS_5_HEAD]' => 'Shutdown-Timer',
     '[PROJECTS_5_TEXT]' => '<p>Ein Timer, geschrieben in Java, der den Windows Rechner nach den eingegebenen Minuten herunterfahren lässt.</p>',
 

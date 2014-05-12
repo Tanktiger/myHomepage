@@ -10,7 +10,7 @@ return array(
     '[PERSON_TEXT_FIRST]' => 'My name is Tom Scheduikat and i am',
     '[PERSON_TEXT_2]' => 'years old',
     '[PERSON_TEXT_3]' => 'I am living in Stralsund, a very nice city in the north of Germany.</p>
-                    <p class="lead">I am currently working at a big german internet concern.
+                    <p class="lead">I am currently working at a german internet concern.
                     My free time is for the family and when they are as sleep, i go programming some of my <a href="#projects">projects</a>.
                     But when my nerves are gone i play some games or watch TV series.',
     '[HELLO]' => 'Hello',
@@ -27,9 +27,8 @@ return array(
     '[PROJECTS_HEADLINE]' => 'My Projects',
     '[PROJECTS_1_HEAD]' => 'This Homepage',
     '[PROJECTS_1_TEXT]' => 'This site delivers information about me.',
-    '[PROJECTS_2_HEAD]' => 'YuGiOh mDB',
-    '[PROJECTS_2_TEXT]' => 'Thats my first web app, programmed with jQuery Mobile and PhoneGap.<br>
-                            The app searches for YuGiOh Cards with their name or cardnumber.',
+    '[PROJECTS_2_HEAD]' => 'Holiday apartment',
+    '[PROJECTS_2_TEXT]' => 'A Website for automatic installation of an Website. <a href="http://www.fewo-traumzeit.de" target="_blank">www.fewo-traumzeit.de</a>',
     '[PROJECTS_3_HEAD]' => 'Cardgame',
     '[PROJECTS_3_TEXT]' => 'This is secret game idea from me :)',
     '[PROJECTS_4_HEAD]' => 'Ideasite',
